@@ -1,0 +1,55 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate.log
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/assets.xml
+.idea/compiler.xml
+.idea/dictionaries
+.idea/jarRepositories.xml
+.idea/libraries
+.idea/modules.xml
+.idea/navigation.xml
+.idea/runConfigurations
+.idea/vcs.xml
+
+# Visual Studio Code related
+.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.flutter-plugins-dependencies
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Flutter/flutter_multicast_addresses.txt
+**/android/local.properties
+**/android/key.properties
+**/build/
+**/build_signature
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+**/.pub-cache/
+**/.pub/
+pubspec.lock
+
+# Web related
+.web/
+
+# Symbol database
+.sym/

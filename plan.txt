@@ -1,0 +1,4 @@
+video fayllar uchun video_logo rasmini assetsga qoshib qo'ydim. Dasturning app_logosini video logosidan olib tashla va
+  dasturning asosiy ekranda ko'rinadigan qismiga qo'shib qo'y! Va yangi kelgan userga ingliz tili Default bo'lsin,
+  sozlamalardan shu bor 3ta tilga o'zgartira oladigan bo'lishi kerak. Va Dasturning yuklanish sahifasini o'zing
+  xohlaganingcha o'zgartirib ber chiroyli qilib!

@@ -1,0 +1,66 @@
+name: funswap
+description: A new Flutter project.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI and Core
+  cupertino_icons: ^1.0.2
+
+  # File Handling
+  file_picker: ^8.0.0
+  path: ^1.9.0
+  path_provider: ^2.0.11
+  share_plus: ^9.0.0
+  permission_handler: ^12.0.3
+
+  # Image Conversion
+  image: ^4.0.17 # For image manipulation
+  flutter_image_compress: ^2.0.4 # For image compression
+
+  # Document Conversion
+  pdf: ^3.8.3 # For PDF generation
+  excel: ^2.0.0 # For Excel file manipulation
+  csv: ^5.0.1 # For CSV manipulation
+
+  # Media Conversion (Video/Audio)
+  ffmpeg_kit_flutter_new: ^4.2.1 # Full FFmpeg kit
+
+  # State Management
+  flutter_bloc: ^8.1.3
+  bloc: ^8.1.2
+  equatable: ^2.0.5
+
+  # Functional Programming for Error Handling
+  dartz: ^0.10.1
+  get_it: ^7.2.0
+  url_launcher: ^6.1.10
+  open_filex: ^4.7.0
+  shared_preferences: ^2.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: true
+  image_path: "assets/icons/app_logo.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+    - assets/icons/app_logo.png
+    - assets/icons/doc_logo.png
+    - assets/icons/image_logo.png
+    - assets/icons/music_logo.png
+    - assets/icons/video_logo.png
+

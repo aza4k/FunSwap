@@ -1,0 +1,30 @@
+Act as an expert Flutter developer and software architect. I want to build a fully offline, serverless, "On-Device File Converter" mobile application using Flutter. The core requirement is that ALL file conversions must happen directly on the user's mobile device, requiring zero server infrastructure, backend APIs, or external resource costs.
+
+Please analyze the architecture blueprint below and help me generate the project structure, state management, and implementation logic.
+
+### 1. App Architecture & Key Features
+- **Zero-Server Dependency:** No remote backend. All processing, bytes manipulation, and file rendering must happen locally using Dart/Flutter libraries or native bindings.
+- **Local File Management:** Ability to pick files from device storage, process them in temporary directories, and save/export the converted files back to the gallery or file system.
+- **Background Processing:** Heavy conversions (like video/audio) should ideally not freeze the UI, utilizing isolates or native background threads.
+
+### 2. Supported Formats & Required Packages
+I want to structure the application to handle three main categories of conversion. Please configure the app to use these packages:
+*   **Images (PNG, JPG, WebP, etc.):** Use `image` and `flutter_image_compress` packages for decoding, format shifting, and resizing.
+*   **Documents (TXT, Images to PDF, CSV ⇄ Excel):** Use `pdf`, `excel`, and `csv` packages to generate and restructure local documents.
+*   **Media (Audio/Video - MP4, MP3, WAV, MKV):** Integrate `ffmpeg_kit_flutter` (or a lighter community-maintained alternative) to execute local FFmpeg commands for media transcoding.
+*   **File Handling:** Use `file_picker`, `path_provider`, and `share_plus` for system integration.
+
+### 3. Target UI/UX Flow
+- **Home Screen:** Clean dashboard showing conversion categories (Image, Document, Media).
+- **File Picker State:** A drop-zone or button to pick the source file, displaying original file details (name, size, extension).
+- **Format Selector:** A dynamic dropdown that filters and shows allowed output formats based on the input file type.
+- **Conversion & Progress Screen:** A visual progress indicator (especially crucial for time-consuming FFmpeg tasks).
+- **Success/Result Screen:** Option to preview the converted file, view saved path, or instantly share/save it.
+
+### Your Task:
+1. Provide a clean, scalable folder structure (Clean Architecture or Feature-first approach) suitable for this Flutter app.
+2. Outline the service classes for each conversion type (`ImageConversionService`, `DocConversionService`, `MediaConversionService`).
+3. Provide a production-ready boilerplate code example for the `ImageConversionService` (converting PNG/JPG to WebP) and show how to safely execute a local FFmpeg command for converting `WAV` to `MP3` using `ffmpeg_kit_flutter`.
+4. Ensure error handling is robust (e.g., handling low storage, unsupported codecs, or file permission denials).
+
+Let's start building this step-by-step. First, give me the folder structure and setup the configuration files.
