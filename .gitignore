@@ -55,3 +55,6 @@ pubspec.lock
 
 # Symbol database
 .sym/
+
+# Screenshots
+screenshots/
