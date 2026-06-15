@@ -10,7 +10,7 @@
 .svn/
 migrate.log
 
-/screenshot
+screenshots/
 
 # IntelliJ related
 *.iml
